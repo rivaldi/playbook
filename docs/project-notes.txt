@@ -1,0 +1,26 @@
+Idea:  A web page/app dedicated to designing and viewing custom football play books.
+
+Technologies: HTML, CSS, JavaScript, JQuery, AJAX, JSON
+
+Phase 1:
+
+	⁃	Set up site repository on either Github or Bitbucket.
+	⁃	Come up with a supported device list for both desktop and tablet devices.
+	⁃	Evaluate possible animation libraries for use with the site.  GSAP and at least 3 others.
+
+Phase 2:
+
+	⁃	Set up HTML/CSS framework for the "Viewing Room" page of the site which will include a playing field and remote control.
+
+Phase 3:
+
+	⁃	Code JQuery / CSS animations for players on the field.  Start with 5 routes/patterns.
+	⁃	Load JSON for individual animations.
+
+Phase 4:
+
+	⁃	Get remote control working for all typical functions.  Play / Pause / Stop / Fast Forward / Rewind / Slow Motion
+
+Phase 5:
+
+	⁃	Set up HTML / CSS framework for the "Play Design" page.

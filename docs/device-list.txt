@@ -1,0 +1,19 @@
+Desktop:
+
+Minimum Resolution Supported
+1280 x 768
+
+Browsers Supported
+IE 9-11
+Mozilla (PC/Mac) Most recent version
+Chrome (PC/Mac) Most recent version
+Safari (Mac) Most recent version
+
+Tablet:
+
+Devices Supported
+iPad (2048 x 1536)
+Samsung Galaxy (2560 x 1600)
+Nexus 10 (2560 x 1600)
+Kindle Fire (1280 x 800)
+Microsoft Surface (1920 x 1080)
