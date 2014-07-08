@@ -1,0 +1,121 @@
+/* players */
+
+#field > div {
+	position: absolute; bottom: 50px;
+	display: block;
+	width: 50px; height: 50px;
+	background-image: url(images/players-sprite.png);
+	background-repeat: no-repeat;
+}
+
+#player-a {
+	left: 175px;
+	background-position: 0 0;
+}
+#player-b {
+	left: 275px;
+	background-position: 0 -50px;
+}
+#player-x {
+	left: 375px;
+	background-position: 0 -100px;
+}
+#player-y {
+	left: 475px;
+	background-position: 0 -150px;
+}
+#player-z {
+	left: 575px;
+	background-position: 0 -200px;
+}
+
+/* player animations */
+
+/* Routes */
+.animate .quick-in, .animate #player-y.quick-out, .animate #player-z.quick-out {
+	-webkit-animation: quick-in 1.5s linear 0s 1 forwards;
+	-moz-animation: quick-in 1.5s linear 0s 1 forwards;
+}
+.rewind .quick-in, .rewind #player-y.quick-out, .rewind #player-z.quick-out {
+	-webkit-animation: quick-in-rewind 1.5s linear 0s 1 backwards;
+	-moz-animation: quick-in-rewind 1.5s linear 0s 1 backwards;
+}
+
+.animate .quick-out, .animate #player-y.quick-in {
+	-webkit-animation: quick-out 1.5s linear 0s 1 forwards;
+	-moz-animation: quick-out 1.5s linear 0s 1 forwards;
+}
+.animate .slant {
+	-webkit-animation: slant 1.5s linear 0s 1 forwards;
+	-moz-animation: slant 1.5s linear 0s 1 forwards;
+}
+.animate .curl {
+	-webkit-animation: curl 1.3s linear 0s 1 forwards;
+	-moz-animation: curl 1.3s linear 0s 1 forwards;
+}
+.animate .fly {
+	-webkit-animation: fly 1.5s linear 0s 1 forwards;
+	-moz-animation: fly 1.5s linear 0s 1 forwards;
+}
+
+/* Webkit keyframes */
+@-webkit-keyframes quick-in {
+    0% { -webkit-transform: translatex(0px) }
+	50% { -webkit-transform: translatey(-150px) }
+    100% { -webkit-transform: translate(100px, -150px) }
+}
+@-webkit-keyframes quick-in-rewind {
+    0% { -webkit-transform: translate(100px, -150px) }
+	50% { -webkit-transform: translatey(-150px) }
+    100% { -webkit-transform: translatex(0px) }
+}
+@-webkit-keyframes quick-out {
+    0% { -webkit-transform: translatex(0px) }
+	50% { -webkit-transform: translatey(-150px) }
+    100% { -webkit-transform: translate(-100px, -150px) }
+}
+@-webkit-keyframes slant {
+    0% { -webkit-transform: translatex(0px) }
+    50% { -webkit-transform: translate(-25px, -100px) }
+	100% { -webkit-transform: translate(-25px, -250px) }
+}
+@-webkit-keyframes curl {
+    0% { -webkit-transform: translatex(0px) }
+    50% { -webkit-transform: translatey(-100px) }
+	100% { -webkit-transform: translate(25px, -75px) }
+}
+@-webkit-keyframes fly {
+    0% { -webkit-transform: translatey(0px) }
+	100% { -webkit-transform: translatey(-350px) }
+}
+
+/* Mozilla keyframes */
+@-moz-keyframes quick-in {
+    0% { -moz-transform: translatex(0px) }
+	50% { -moz-transform: translatey(-150px) }
+    100% { -moz-transform: translate(100px, -150px) }
+}
+@-moz-keyframes quick-in-rewind {
+    0% { -webkit-transform: translate(100px, -150px) }
+	50% { -webkit-transform: translatey(-150px) }
+    100% { -webkit-transform: translatex(0px) }
+}
+@-moz-keyframes quick-out {
+    0% { -moz-transform: translatex(0px) }
+	50% { -moz-transform: translatey(-150px) }
+    100% { -moz-transform: translate(-100px, -150px) }
+}
+@-moz-keyframes slant {
+    0% { -moz-transform: translatex(0px) }
+    50% { -moz-transform: translate(-25px, -100px) }
+	100% { -moz-transform: translate(-25px, -250px) }
+}
+@-moz-keyframes curl {
+    0% { -moz-transform: translatex(0px) }
+    50% { -moz-transform: translatey(-100px) }
+	100% { -moz-transform: translate(25px, -75px) }
+}
+@-moz-keyframes fly {
+    0% { -moz-transform: translatey(0px) }
+	100% { -moz-transform: translatey(-350px) }
+}

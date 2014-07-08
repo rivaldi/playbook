@@ -1,0 +1,39 @@
+/* common styles */
+
+body {
+	background: none #5a5d5a;
+    font-family: arial;
+}
+
+/* Content containing divs */
+
+#bg {
+}
+
+#container {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#field {
+	position: relative;
+	width: 800px;
+	background: none #006f00;
+}
+
+#remote-control {
+	position: absolute; top: 0; right: 0;
+}
+
+/* Page header */
+
+#header {
+
+}
+
+/* Footer */
+
+footer {
+
+}
