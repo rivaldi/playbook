@@ -6,7 +6,12 @@ Phase 1:
 
 	⁃	Set up site repository on either Github or Bitbucket.
 	⁃	Come up with a supported device list for both desktop and tablet devices.
-	⁃	Evaluate possible animation libraries for use with the site.  GSAP and at least 3 others.
+	⁃	Evaluate possible animation libraries for use with the site.  GSAP and at least 3 others. http://www.jsdb.io/animation/
+		-	http://greensock.com
+		-	http://VelocityJS.org
+		-	http://jeremyckahn.github.io/shifty/
+		-	http://jqueryui.com
+		-	http://jstween.org
 
 Phase 2:
 
