@@ -29,3 +29,10 @@ Phase 4:
 Phase 5:
 
 	⁃	Set up HTML / CSS framework for the "Play Design" page.
+
+
+7/10 Notes:
+Deadline, Thursday July 17
+- Set up some animations using greensock (any kind)
+- Set up some controls for animations
+- Draw up a JSON structure for what a play should contain
