@@ -1,0 +1,88 @@
+{
+	"team-name":"default",
+	"plays":[{
+		"play-1":[{
+			"play-name":"One",
+			"formation-name":"Pistol",
+			"positions":[{
+				"position-1":[{
+					"type":"Wide Receiver",
+					"field-location":[{
+						"x-axis":"50px",
+						"y-axis":"50px"
+					}],
+					"route":[{
+						"route-name":"5 Yard In",
+						"vertical-animation":"50px",
+						"horizontal-animation":"100px",
+						"horizontal-direction":"right"
+					}]
+				}],
+				"position-2":[{
+					"type":"Wide Receiver",
+					"field-location":[{
+						"x-axis":"100px",
+						"y-axis":"50px"
+					}],
+					"route":[{
+						"route-name":"10 Yard Out",
+						"vertical-animation":"100px",
+						"horizontal-animation":"100px",
+						"horizontal-direction":"left"
+					}]
+				}],
+				"position-3":[{
+					"type":"Wide Receiver",
+					"field-location":[{
+						"x-axis":"200px",
+						"y-axis":"50px"
+					}],
+					"route":[{
+						"route-name":"10 Yard In",
+						"vertical-animation":"100px",
+						"horizontal-animation":"100px",
+						"horizontal-direction":"left"
+					}]
+				}],
+				"position-4":[{
+					"type":"Wide Reciever",
+					"field-location":[{
+						"x-axis":"250px",
+						"y-axis":"50px"
+					}],
+					"route":[{
+						"route-name":"Post Corner",
+						"vertical-animation":"150px",
+						"horizontal-animation":"50px",
+						"horizontal-direction":"right"
+					}]
+				}],
+				"position-5":[{
+					"type":"Running Back",
+					"field-location":[{
+						"x-axis":"150px",
+						"y-axis":"0"
+					}],
+					"route":[{
+						"route-name":"Wheel",
+						"vertical-animation":"100px",
+						"horizontal-animation":"75px",
+						"horizontal-direction":"right"
+					}]
+				}]
+			}]
+		}],
+		"play-2":[{
+
+		}],
+		"play-3":[{
+
+		}],
+		"play-4":[{
+
+		}],
+		"play-5":[{
+
+		}]
+	}]
+}
