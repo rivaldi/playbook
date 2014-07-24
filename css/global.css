@@ -2,7 +2,7 @@
 a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{background:none repeat scroll 0 0 transparent;border:0;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}body{font-size:62.5%;line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 /* End Reset */
 
-/* Begin Layout CSS */
+/* Begin Layout */
 
 body {
     background: none repeat scroll 0% 0% #5a5d5a;
@@ -26,17 +26,17 @@ body {
     position: absolute;
     right: 3%; top: 1%;
     width: 200px; height: 400px;
-    background: none #333;
     border-radius: 20px;
+    background: none #333;
 }
 
 footer {
     
 }
 
-/* End Layout CSS */
+/* End Layout */
 
-/* Begin Player CSS */
+/* Begin Players */
 
 #field div {
 	position: absolute;
@@ -58,3 +58,60 @@ footer {
 #player3 {
 	top: 22%;
 }
+
+/* End Players */
+
+/* Begin Remote Controls */
+
+#remote-control button {
+	position: relative;
+	display: block;
+	width: 75px; height: 75px;
+	padding: 6px; margin: 42px auto 0;
+	border-radius: 100%;
+	border: 0 solid #333;
+	background: linear-gradient(#fff, #ccc), #c9c5c9;
+}
+#remote-control button:before,
+#remote-control button:after {
+	position: absolute;
+	content: ' ';
+}
+
+#play:before {
+  z-index: 2;
+  left: 27px; top: 17px;
+  width: 0; height: 0;
+  border: 22px solid transparent;
+  border-left-color: #575757;
+  border-left-width: 34px;
+}
+
+#rewind:before,
+#rewind:after {
+	top: 19px;
+	width: 0; height: 0;
+	border: 20px solid transparent;
+	border-right-color: #575757;
+	border-right-width: 20px;
+}
+#rewind:before {
+	left: 16px;
+}
+#rewind:after {
+	left: -6px;
+	content: " "
+}
+
+#pause:before,
+#pause:after {
+  left: 22px; top: 21px;
+  display: block;
+  width: 14px; height: 35px;
+  background-color: #575757;
+}
+#pause:after {
+ left: 41px;
+}
+
+/* End Remote Controls */
