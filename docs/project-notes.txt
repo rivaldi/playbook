@@ -36,3 +36,9 @@ Deadline, Thursday July 17
 - Set up some animations using greensock (any kind)
 - Set up some controls for animations
 - Draw up a JSON structure for what a play should contain
+
+7/25 Notes:
+- Change existing javascript to include a for loop for the tweens and players.
+- Be able to change the number of players
+- Think about objects vs. arrays (in JSON) for performance reasons.  Make modifications to current JSON object if necessary.  Link to Nate after mods.
+
