@@ -105,13 +105,17 @@ footer {
 
 #pause:before,
 #pause:after {
-  left: 22px; top: 21px;
-  display: block;
-  width: 14px; height: 35px;
-  background-color: #575757;
+	left: 22px; top: 21px;
+	display: block;
+	width: 14px; height: 35px;
+	background-color: #575757;
 }
 #pause:after {
- left: 41px;
+	left: 41px;
+}
+
+#add-player {
+	bottom: -20px;
 }
 
 /* End Remote Controls */

@@ -2,38 +2,50 @@
 
 window.onload = function() {
 
+	// Remote Buttons
 	var playBtn = document.getElementById('play');
 	var pauseBtn = document.getElementById('pause');
 	var rewindBtn = document.getElementById('rewind');
+	var addPlayer = document.getElementById('add-player');
+
+	// Players and movements
 	var players = document.getElementsByClassName('player');
+	var tweens = [];
 
-	for (i=0; i < players.length ;i++) {
-		var playerId = players[i].getAttribute('id');
-
-		console.log(playerId);
+	for (i=0; i < players.length; i++) {
+		var distance = (i + 1) * 25;
+		tweens.push(new TweenLite(players[i], 4, {left:distance + "%"}));
 	}
 
-	var player1_movement = new TweenLite(players[0], 5, {left:"75%"});
-	var player2_movement = new TweenLite(players[1], 5, {left:"25%"});
-	var player3_movement = new TweenLite(players[2], 5, {left:"50%"});
+	playBtn.onclick = function() {
+		for (i=0; i < players.length; i++) {
+			tweens[i].play();
+		}
+	}
 
-	// playBtn.onclick = function() {
-	// 	player1_movement.play();
-	// 	player2_movement.play();
-	// 	player3_movement.play();
-	// }
+	pauseBtn.onclick = function() {
+		for (i=0; i < players.length; i++) {
+			tweens[i].pause();
+		}
+	}
 
-	// pauseBtn.onclick = function() {
-	// 	player1_movement.pause();
-	// 	player2_movement.pause();
-	// 	player3_movement.pause();
-	// }
+	rewindBtn.onclick = function() {
+		for (i=0; i < players.length; i++) {
+			tweens[i].reverse();
+		}
+	}
 
-	// rewindBtn.onclick = function() {
-	// 	player1_movement.reverse();
-	// 	player2_movement.reverse();
-	// 	player3_movement.reverse();
-	// }
+	addPlayer.onclick = function() {
+		var playerNumber = players.length + 1;
+		var field = document.getElementById('field');
+		var newPlayer = document.createElement('div');
+
+		newPlayer.id = "new" + playerNumber;
+		newPlayer.className = "player";
+		newPlayer.innerHTML = "N" + playerNumber;
+		field.appendChild(newPlayer);
+	}
+
 
 	// TweenLite.to(player1, 2, {top:"500px", delay:1.9});
 	// TweenLite.to(player2, 2, {top:"500px", delay:1.9});

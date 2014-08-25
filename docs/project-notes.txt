@@ -42,3 +42,14 @@ Deadline, Thursday July 17
 - Be able to change the number of players
 - Think about objects vs. arrays (in JSON) for performance reasons.  Make modifications to current JSON object if necessary.  Link to Nate after mods.
 
+8/13 Notes:
+// tactical
+// 1. look into how to create an empty array (so you can put stuff in it)
+// 2. how do you add stuff to the array, because in the loop we'll want to create a tween and add it to the array with the same index that the player has.
+// 3. how do you access it? (you already have that)
+
+// big level
+// update the play controls to use the array access for players/movements
+// add a button that can add a player dynamically
+// add a button that can remove last added player dynamically
+
