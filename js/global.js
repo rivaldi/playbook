@@ -44,6 +44,7 @@ window.onload = function() {
 		newPlayer.className = "player";
 		newPlayer.innerHTML = "N" + playerNumber;
 		field.appendChild(newPlayer);
+		tweens.push(new TweenLite(newPlayer, 4, {left:"500px"}));
 	}
 
 
