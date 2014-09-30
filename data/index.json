@@ -1,0 +1,19 @@
+{
+	"positions":[{
+		"position-1": {
+			"name":"WR",
+			"x-axis":"50px",
+			"y-axis":"50px"
+		},
+		"position-2": {
+			"name":"TE",
+			"x-axis":"50px",
+			"y-axis":"250px"
+		},
+		"position-3": {
+			"name":"WR",
+			"x-axis":"50px",
+			"y-axis":"450px"
+		}
+	}]
+}
