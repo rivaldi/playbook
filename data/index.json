@@ -1,19 +1,19 @@
 {
-	"positions":[{
-		"position-1": {
+	"positions": {
+		"player-1": {
 			"name":"WR",
 			"x-axis":"50px",
 			"y-axis":"50px"
 		},
-		"position-2": {
+		"player-2": {
 			"name":"TE",
 			"x-axis":"50px",
 			"y-axis":"250px"
 		},
-		"position-3": {
+		"player-3": {
 			"name":"WR",
 			"x-axis":"50px",
 			"y-axis":"450px"
 		}
-	}]
+	}
 }
