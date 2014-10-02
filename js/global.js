@@ -27,14 +27,17 @@ window.onload = function() {
 	function createPlayers(actual_JSON) {
 
 		var playerList = actual_JSON;
-
 		var playerArray = [];
 
-		for (var prop in playerList) {
-			playerArray.push(playerList[prop]);
+		// Loop through playerList and add each position to playerArray
+		for (var player in playerList.positions) {
+			playerArray.push(playerList.positions[player]);
 		}
 
-		console.log(playerArray);
+		for (i=0; i < playerArray.length; i++) {
+			console.log('player ' + i)
+		}
+		console.log(playerArray.length);
 	}
 
 	// Remote Buttons
